@@ -1,0 +1,7 @@
+#include "broadcastnetworcontroller.h"
+
+
+BroadcastNetworController::BroadcastNetworController(bool server, QString ip)
+{
+    
+}

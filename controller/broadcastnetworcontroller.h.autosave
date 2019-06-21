@@ -1,0 +1,53 @@
+#ifndef BROADCASTNETWORCONTROLLER_H
+#define BROADCASTNETWORCONTROLLER_H
+
+#include <QAudioOutput>
+#include <QThread>
+
+#include "model/message.h"
+#include "model/broadcastclient.h"
+
+class BroadcastNetworController : public QThread
+{
+    Q_OBJECT
+    
+    BroadcastClient client;
+    
+    bool is_send;
+    bool is_call;
+    bool is_config;
+    
+    void run() override;
+    Message getSzum();
+    
+    QAudioInput * audioInput;
+    QAudioOutput * audioOutput;
+
+    char szum_level;
+    
+    void prepareToAudioOutput(Message& msg);
+    
+public:
+    BroadcastNetworController(bool server, QString ip = "127.0.0.1");
+
+    void config_send(int frequency);
+    void config_listen(int frequecy);
+    void config_kill();
+
+    void call_on();
+    void call_off();
+
+    void setVolume(char level);
+    void setSzumLevel(char level);
+    void setRecordVolume(char level);
+
+    ~BroadcastNetworController();
+signals:
+
+    void set_call();
+    void reset_call();
+
+public slots:
+};
+
+#endif // BROADCASTNETWORCONTROLLER_H
