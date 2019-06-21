@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>R173</class>
+ <widget class="QMainWindow" name="R173">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>999</width>
+    <height>676</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Р173</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="r173.qrc">
+    <normaloff>:/res/icon.png</normaloff>:/res/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>972</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/res/p-173m.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>:/new/prefix1/res/radioset-p-173m.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button1">
+    <property name="geometry">
+     <rect>
+      <x>221</x>
+      <y>327</y>
+      <width>44</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/res/p-173m-1btn.jpg);ra</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button2">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>327</y>
+      <width>44</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/res/p-173m-2btn.jpg);
+border-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button3">
+    <property name="geometry">
+     <rect>
+      <x>323</x>
+      <y>327</y>
+      <width>44</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/res/p-173m-3btn.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button4">
+    <property name="geometry">
+     <rect>
+      <x>222</x>
+      <y>373</y>
+      <width>44</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/res/p-173m-4btn.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button5">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>373</y>
+      <width>44</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/res/p-173m-5btn.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button6">
+    <property name="geometry">
+     <rect>
+      <x>323</x>
+      <y>373</y>
+      <width>44</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/res/p-173m-6btn.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button7">
+    <property name="geometry">
+     <rect>
+      <x>222</x>
+      <y>420</y>
+      <width>44</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/res/p-173m-7btn.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button8">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>420</y>
+      <width>44</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/res/p-173m-8btn.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonCls">
+    <property name="geometry">
+     <rect>
+      <x>223</x>
+      <y>468</y>
+      <width>43</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/res/p-173m-clsbtn.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button9">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>420</y>
+      <width>44</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/res/p-173m-9btn.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button0">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>466</y>
+      <width>44</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/res/p-173m-0btn.jpg);</string>
+    </property>
+    <property name="locale">
+     <locale language="Persian" country="Iran"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="szum">
+    <property name="geometry">
+     <rect>
+      <x>487</x>
+      <y>377</y>
+      <width>28</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/new/prefix1/res/szum.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="power">
+    <property name="geometry">
+     <rect>
+      <x>471</x>
+      <y>462</y>
+      <width>28</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/new/prefix1/res/power.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pomiechi">
+    <property name="geometry">
+     <rect>
+      <x>389</x>
+      <y>377</y>
+      <width>28</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/new/prefix1/res/pomiechi.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tableSwitch">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>500</y>
+      <width>37</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/res/table.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="powerLevel">
+    <property name="geometry">
+     <rect>
+      <x>429</x>
+      <y>307</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/res/powerLavel.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="field0">
+    <property name="geometry">
+     <rect>
+      <x>208</x>
+      <y>211</y>
+      <width>24</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/tableNubers/field_off.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="field1">
+    <property name="geometry">
+     <rect>
+      <x>247</x>
+      <y>211</y>
+      <width>24</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/tableNubers/field_off.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="field2">
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>211</y>
+      <width>24</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/tableNubers/field_off.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="field3">
+    <property name="geometry">
+     <rect>
+      <x>305</x>
+      <y>211</y>
+      <width>24</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/tableNubers/field_off.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="field4">
+    <property name="geometry">
+     <rect>
+      <x>333</x>
+      <y>211</y>
+      <width>24</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/tableNubers/field_off.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="field5">
+    <property name="geometry">
+     <rect>
+      <x>363</x>
+      <y>211</y>
+      <width>24</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/tableNubers/field_off.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="prd">
+    <property name="geometry">
+     <rect>
+      <x>388</x>
+      <y>311</y>
+      <width>24</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/pered.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="call">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>292</y>
+      <width>27</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/p-173m-call_off.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ton">
+    <property name="geometry">
+     <rect>
+      <x>478</x>
+      <y>306</y>
+      <width>30</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/res/p-173m-ton_released.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="volumePRM">
+    <property name="geometry">
+     <rect>
+      <x>435</x>
+      <y>379</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="r173.qrc">:/res/p-173m-round.png</pixmap>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="volumeSound">
+    <property name="geometry">
+     <rect>
+      <x>406</x>
+      <y>464</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="r173.qrc">:/res/p-173m-round-sound.png</pixmap>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="provod1_show">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>440</y>
+      <width>191</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="provod3_show">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>560</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="provod2_show">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>181</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="provod4_show">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>570</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>button1</zorder>
+   <zorder>button2</zorder>
+   <zorder>button3</zorder>
+   <zorder>button4</zorder>
+   <zorder>button5</zorder>
+   <zorder>button6</zorder>
+   <zorder>button7</zorder>
+   <zorder>button8</zorder>
+   <zorder>buttonCls</zorder>
+   <zorder>button9</zorder>
+   <zorder>button0</zorder>
+   <zorder>szum</zorder>
+   <zorder>power</zorder>
+   <zorder>pomiechi</zorder>
+   <zorder>tableSwitch</zorder>
+   <zorder>powerLevel</zorder>
+   <zorder>field0</zorder>
+   <zorder>field1</zorder>
+   <zorder>field2</zorder>
+   <zorder>field3</zorder>
+   <zorder>field4</zorder>
+   <zorder>field5</zorder>
+   <zorder>prd</zorder>
+   <zorder>call</zorder>
+   <zorder>ton</zorder>
+   <zorder>volumePRM</zorder>
+   <zorder>volumeSound</zorder>
+   <zorder>provod1_show</zorder>
+   <zorder>provod2_show</zorder>
+   <zorder>provod3_show</zorder>
+   <zorder>provod4_show</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="r173.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>r123</class>
+ <widget class="QMainWindow" name="r123">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1056</width>
+    <height>673</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1056</width>
+    <height>673</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1056</width>
+    <height>673</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Р123</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="r173.qrc">
+    <normaloff>:/res/icon.png</normaloff>:/res/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="r123">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <attribute name="title">
+        <string>Р123</string>
+       </attribute>
+       <widget class="QLabel" name="r173label">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>1</y>
+          <width>1011</width>
+          <height>631</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/res/r123/r123.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/r123.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_szum">
+        <property name="geometry">
+         <rect>
+          <x>173</x>
+          <y>92</y>
+          <width>61</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/r123-szum.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_ust_cz">
+        <property name="geometry">
+         <rect>
+          <x>248</x>
+          <y>230</y>
+          <width>91</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/r123-ust_cz.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_nastr">
+        <property name="geometry">
+         <rect>
+          <x>621</x>
+          <y>147</y>
+          <width>141</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/r123_nastr.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_volume">
+        <property name="geometry">
+         <rect>
+          <x>855</x>
+          <y>361</y>
+          <width>91</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/r123_volume.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_controlu">
+        <property name="geometry">
+         <rect>
+          <x>112</x>
+          <y>204</y>
+          <width>101</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/r123_control_ui.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_simp">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>95</y>
+          <width>111</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/r123_simp.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_zpcz">
+        <property name="geometry">
+         <rect>
+          <x>608</x>
+          <y>308</y>
+          <width>211</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">opacity: 0.5;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/r123_zpcz.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_szkalaswitch">
+        <property name="geometry">
+         <rect>
+          <x>107</x>
+          <y>311</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/vsua-clk_ind.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_powerswitcher">
+        <property name="geometry">
+         <rect>
+          <x>183</x>
+          <y>307</y>
+          <width>31</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/vsua-clk_ind.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_ton_call">
+        <property name="geometry">
+         <rect>
+          <x>141</x>
+          <y>314</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/vsua-nastr_fil.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_ustr">
+        <property name="geometry">
+         <rect>
+          <x>832</x>
+          <y>234</y>
+          <width>121</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/r123_ustr.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_zpcz1">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>90</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/numbers/r123_poddiap1.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_zpcz2">
+        <property name="geometry">
+         <rect>
+          <x>868</x>
+          <y>95</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/numbers/r123_zpcz2.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_zpcz3">
+        <property name="geometry">
+         <rect>
+          <x>902</x>
+          <y>95</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/numbers/r123_zpcz3.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_zpcz4">
+        <property name="geometry">
+         <rect>
+          <x>936</x>
+          <y>96</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/numbers/r123_zpcz4.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_poddiap1">
+        <property name="geometry">
+         <rect>
+          <x>852</x>
+          <y>315</y>
+          <width>31</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/numbers/r123_poddiap1.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_poddiap2">
+        <property name="geometry">
+         <rect>
+          <x>920</x>
+          <y>320</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/numbers/r123_poddiap2.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_cz">
+        <property name="geometry">
+         <rect>
+          <x>333</x>
+          <y>190</y>
+          <width>291</width>
+          <height>561</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/open_detail/r123_cz_zakr.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignHCenter|Qt::AlignTop</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_pit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>356</y>
+          <width>261</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_mtg">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>290</y>
+          <width>101</width>
+          <height>401</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_poddiap_switchers">
+        <property name="geometry">
+         <rect>
+          <x>796</x>
+          <y>77</y>
+          <width>201</width>
+          <height>152</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_line">
+        <property name="geometry">
+         <rect>
+          <x>271</x>
+          <y>50</y>
+          <width>431</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/line/r123_line.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_number_poddiap1_1">
+        <property name="geometry">
+         <rect>
+          <x>424</x>
+          <y>84</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>20.0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_number_poddiap1_2">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>84</y>
+          <width>31</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>20.1</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_number_poddiap2_1">
+        <property name="geometry">
+         <rect>
+          <x>467</x>
+          <y>119</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>35.8</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_number_poddiap2_2">
+        <property name="geometry">
+         <rect>
+          <x>553</x>
+          <y>119</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>35.9</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_line_off">
+        <property name="geometry">
+         <rect>
+          <x>389</x>
+          <y>68</y>
+          <width>171</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/res/r123/line/r123_line_black.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_zpcz1_poddiap_sl">
+        <property name="geometry">
+         <rect>
+          <x>840</x>
+          <y>180</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_zpcz2_poddiap_sl">
+        <property name="geometry">
+         <rect>
+          <x>873</x>
+          <y>180</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_zpcz3_poddiap_sl">
+        <property name="geometry">
+         <rect>
+          <x>907</x>
+          <y>180</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_zpcz4_poddiap_sl">
+        <property name="geometry">
+         <rect>
+          <x>940</x>
+          <y>180</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_diod_setup">
+        <property name="geometry">
+         <rect>
+          <x>582</x>
+          <y>50</y>
+          <width>131</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/r123_setup_diod.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_antena">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>0</y>
+          <width>231</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="r123_ziem">
+        <property name="geometry">
+         <rect>
+          <x>933</x>
+          <y>370</y>
+          <width>101</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>r123_line</zorder>
+       <zorder>r123_number_poddiap2_2</zorder>
+       <zorder>r123_number_poddiap2_1</zorder>
+       <zorder>r123_number_poddiap1_2</zorder>
+       <zorder>r123_number_poddiap1_1</zorder>
+       <zorder>r123_line_off</zorder>
+       <zorder>r173label</zorder>
+       <zorder>r123_szum</zorder>
+       <zorder>r123_ust_cz</zorder>
+       <zorder>r123_nastr</zorder>
+       <zorder>r123_volume</zorder>
+       <zorder>r123_controlu</zorder>
+       <zorder>r123_simp</zorder>
+       <zorder>r123_zpcz</zorder>
+       <zorder>r123_szkalaswitch</zorder>
+       <zorder>r123_powerswitcher</zorder>
+       <zorder>r123_ton_call</zorder>
+       <zorder>r123_ustr</zorder>
+       <zorder>r123_zpcz1</zorder>
+       <zorder>r123_zpcz2</zorder>
+       <zorder>r123_zpcz3</zorder>
+       <zorder>r123_zpcz4</zorder>
+       <zorder>r123_poddiap1</zorder>
+       <zorder>r123_poddiap2</zorder>
+       <zorder>r123_cz</zorder>
+       <zorder>r123_pit</zorder>
+       <zorder>r123_mtg</zorder>
+       <zorder>r123_poddiap_switchers</zorder>
+       <zorder>r123_zpcz4_poddiap_sl</zorder>
+       <zorder>r123_zpcz3_poddiap_sl</zorder>
+       <zorder>r123_zpcz2_poddiap_sl</zorder>
+       <zorder>r123_zpcz1_poddiap_sl</zorder>
+       <zorder>r123_diod_setup</zorder>
+       <zorder>r123_antena</zorder>
+       <zorder>r123_ziem</zorder>
+      </widget>
+      <widget class="QWidget" name="vsua">
+       <attribute name="title">
+        <string>ВСУА</string>
+       </attribute>
+       <widget class="QLabel" name="vsualabel">
+        <property name="geometry">
+         <rect>
+          <x>194</x>
+          <y>58</y>
+          <width>640</width>
+          <height>480</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>640</width>
+          <height>480</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>640</width>
+          <height>480</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/res/r123/всуа.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_ukv">
+        <property name="geometry">
+         <rect>
+          <x>194</x>
+          <y>220</y>
+          <width>51</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_ziem">
+        <property name="geometry">
+         <rect>
+          <x>268</x>
+          <y>393</y>
+          <width>71</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_ant1">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>90</y>
+          <width>101</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_ant2">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>90</y>
+          <width>101</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_ant3">
+        <property name="geometry">
+         <rect>
+          <x>423</x>
+          <y>87</y>
+          <width>101</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_ant4">
+        <property name="geometry">
+         <rect>
+          <x>483</x>
+          <y>86</y>
+          <width>101</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_ustcz">
+        <property name="geometry">
+         <rect>
+          <x>261</x>
+          <y>309</y>
+          <width>56</width>
+          <height>56</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/vsua_naptr_kr.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_vrt">
+        <property name="geometry">
+         <rect>
+          <x>681</x>
+          <y>316</y>
+          <width>71</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/vsua_vrt.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_net">
+        <property name="geometry">
+         <rect>
+          <x>631</x>
+          <y>244</y>
+          <width>55</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/vsua_net.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_ind">
+        <property name="geometry">
+         <rect>
+          <x>561</x>
+          <y>157</y>
+          <width>41</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/vsua_ind.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_raw">
+        <property name="geometry">
+         <rect>
+          <x>525</x>
+          <y>352</y>
+          <width>55</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/vsua_raw.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_ant_vrt">
+        <property name="geometry">
+         <rect>
+          <x>392</x>
+          <y>293</y>
+          <width>55</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/vsua_ant.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_ind_switch">
+        <property name="geometry">
+         <rect>
+          <x>308</x>
+          <y>201</y>
+          <width>21</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/vsua_switch_ind.jpg.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_nastr_fil">
+        <property name="geometry">
+         <rect>
+          <x>277</x>
+          <y>399</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/vsua-nastr_fil.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_clk_ind">
+        <property name="geometry">
+         <rect>
+          <x>305</x>
+          <y>241</y>
+          <width>31</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/vsua-clk_ind_r.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="vsua_ustr">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>153</y>
+          <width>55</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="r123.qrc">:/res/r123/vsua-ustr.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="bp26">
+       <attribute name="title">
+        <string>БП26</string>
+       </attribute>
+       <widget class="QLabel" name="bp26label">
+        <property name="geometry">
+         <rect>
+          <x>166</x>
+          <y>45</y>
+          <width>696</width>
+          <height>506</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>696</width>
+          <height>506</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>696</width>
+          <height>506</height>
+         </size>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/res/r123/bp26.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="pit_vsua">
+        <property name="geometry">
+         <rect>
+          <x>431</x>
+          <y>257</y>
+          <width>451</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="pit_zem">
+        <property name="geometry">
+         <rect>
+          <x>167</x>
+          <y>460</y>
+          <width>91</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="pit_pit">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>430</y>
+          <width>391</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="r173.qrc"/>
+  <include location="r123.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,57 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>res/p-173m-0btn.jpg</file>
+        <file>res/p-173m-1btn.jpg</file>
+        <file>res/p-173m-2btn.jpg</file>
+        <file>res/p-173m-3btn.jpg</file>
+        <file>res/p-173m-4btn.jpg</file>
+        <file>res/p-173m-5btn.jpg</file>
+        <file>res/p-173m-6btn.jpg</file>
+        <file>res/p-173m-7btn.jpg</file>
+        <file>res/p-173m-8btn.jpg</file>
+        <file>res/p-173m-9btn.jpg</file>
+        <file>res/p-173m-clsbtn.jpg</file>
+        <file>res/power.jpg</file>
+        <file>res/p-173m.jpg</file>
+        <file>res/pomiechi.jpg</file>
+        <file>res/szum.jpg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>res/pomiechi_r.jpg</file>
+        <file>res/power_r.jpg</file>
+        <file>res/szum_r.jpg</file>
+        <file>res/pomiechi.jpg</file>
+        <file>res/power.jpg</file>
+        <file>res/powerLavel.jpg</file>
+        <file>res/powerLavel_r.jpg</file>
+        <file>res/szum.jpg</file>
+        <file>res/table.jpg</file>
+        <file>res/table_r.jpg</file>
+        <file>res/tableNubers/field0.jpg</file>
+        <file>res/tableNubers/field1.jpg</file>
+        <file>res/tableNubers/field2.jpg</file>
+        <file>res/tableNubers/field3.jpg</file>
+        <file>res/tableNubers/field4.jpg</file>
+        <file>res/tableNubers/field5.jpg</file>
+        <file>res/tableNubers/field6.jpg</file>
+        <file>res/tableNubers/field7.jpg</file>
+        <file>res/tableNubers/field8.jpg</file>
+        <file>res/tableNubers/field9.jpg</file>
+        <file>res/tableNubers/field_off.jpg</file>
+        <file>r173.cpp</file>
+        <file>r173.h</file>
+        <file>res/pered.jpg</file>
+        <file>res/pered_o.jpg</file>
+        <file>res/icon.png</file>
+        <file>res/p-173m-call_off.jpg</file>
+        <file>res/p-173m-call_on.jpg</file>
+        <file>res/p-173m-ton_pressed.jpg</file>
+        <file>res/p-173m-ton_released.jpg</file>
+        <file>res/p-173m-round.png</file>
+        <file>res/p-173m-round-sound.png</file>
+        <file>res/p173-nlo.png</file>
+        <file>res/p173-nvo.png</file>
+        <file>res/p173-lvo.png</file>
+        <file>res/p173-lno.png</file>
+    </qresource>
+</RCC>
