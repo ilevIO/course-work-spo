@@ -26,7 +26,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-    controller/networkcontroller/lol.cpp \
     controller/r123bpstatecontroller.cpp \
     controller/r123rststatecontroller.cpp \
     controller/r123statecontroller.cpp \
@@ -87,7 +86,6 @@ RESOURCES += \
     view/r159.qrc \
     view/r123.qrc
 
-LIBS += -lws2_32
 
 DISTFILES += \
     view/res/p173-nlo.jpg \

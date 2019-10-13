@@ -1,9 +1,10 @@
 #ifndef SOCKETCLIENT_H
 #define SOCKETCLIENT_H
 
-#include <WinSock2.h>
 
+#include <arpa/inet.h>
 
+typedef int SOCKET;
 class Socket
 {
     SOCKET sock;

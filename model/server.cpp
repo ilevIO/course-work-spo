@@ -1,6 +1,6 @@
 #include "model/server.h"
 #include "model/client.h"
-
+#include <smmintrin.h>
 Server::Server() :
     listenningThread(this),
     recieveThread(this)

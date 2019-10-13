@@ -1,8 +1,9 @@
 #ifndef BROADCASTSOCKET_H
 #define BROADCASTSOCKET_H
 
-#include <winsock2.h>
+#include <arpa/inet.h>
 
+typedef int SOCKET;
 class BroadcastSocket
 {
     SOCKET reciever, sender;

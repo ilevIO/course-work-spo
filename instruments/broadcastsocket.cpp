@@ -75,7 +75,7 @@ void BroadcastSocket::send(char *buffer, int len)
 
 void BroadcastSocket::recieve(char *buffer, int max_len)
 {
-    static int size = sizeof(sockaddr_in);
+    static socklen_t size = sizeof(sockaddr_in);
     if (recvfrom(this->reciever, buffer, max_len, 0, (sockaddr*)&this->res_addr, &size) < 0)
         qDebug() << "error recieve";
 }
