@@ -3,7 +3,7 @@
 BroadcastClient::BroadcastClient()
 {
 //    this->socket.bind(NULL, 5000);
-    this->socket.bind(nullptr, 5000);
+    this->socket.bind(NULL, 5000);
 }
 
 void BroadcastClient::send(Message &message)

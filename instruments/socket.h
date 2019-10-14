@@ -1,10 +1,15 @@
 #ifndef SOCKETCLIENT_H
 #define SOCKETCLIENT_H
 
-
+#ifdef _WIN32
+#incldude <winsock2.h>
+#else
 #include <arpa/inet.h>
-
+#define NULL nullptr
 typedef int SOCKET;
+#endif
+
+
 class Socket
 {
     SOCKET sock;

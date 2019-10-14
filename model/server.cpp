@@ -1,6 +1,10 @@
 #include "model/server.h"
 #include "model/client.h"
+
+#ifndef _WIN32
 #include <smmintrin.h>
+#endif
+
 Server::Server() :
     listenningThread(this),
     recieveThread(this)
