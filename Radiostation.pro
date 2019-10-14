@@ -25,6 +25,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
 
+win32 {
+LIBS += -lws2_32
+}
 SOURCES += \
     controller/r123bpstatecontroller.cpp \
     controller/r123rststatecontroller.cpp \
