@@ -81,11 +81,10 @@ void Server::SendRecieveThread::run()
 /*
                         for (int i = 0; i < MESSAGE_SIZE / 8; i++)
                         {
-                            reinterpret_cast<long long *>(messagePtr->audio_data)[i] +=
-                                    reinterpret_cast<long long *>(message.audio_data)[i];
+                            reinterpret_cast<uint64 *>(messagePtr->audio_data)[i] +=
+                                    reinterpret_cast<uint64 *>(message.audio_data)[i];
                         }
 */
-
                         __m128i* destiny = reinterpret_cast<__m128i*>(messagePtr->audio_data);
                         __m128i* source  = reinterpret_cast<__m128i*>(message.audio_data);
 

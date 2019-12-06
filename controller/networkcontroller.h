@@ -11,6 +11,8 @@
 
 class NetworkController : public AbstractNetworkController
 {
+
+protected:
     Q_OBJECT
 
     Server * server;
@@ -21,14 +23,13 @@ class NetworkController : public AbstractNetworkController
     QMutex change_state;
 
     Message nothing;
-    Message sendSound;
+    Message sendingSound;
     Message callingSound;
-    Message recieveSound;
+    Message recievedSound;
 
-    bool is_send;
+    bool is_transmitting;
     bool is_call;
-    bool is_config;
-
+    bool is_configured;
     QAudioInput * audioInput;
     QAudioOutput * audioOutput;
 

@@ -19,9 +19,9 @@ void NetworkController::run()
     {
         this->change_state.lock();
 
-        if (this->is_config)
+        if (this->is_configured)
         {
-            if (this->is_send)
+            if (this->is_transmitting)
             {
                 if (this->is_call)
                 {
@@ -44,34 +44,34 @@ void NetworkController::run()
                         switched = true;
                     }
                     call = false;
-                    audioIn->read(sendSound.audio_data, MESSAGE_SIZE);
+                    audioIn->read(sendingSound.audio_data, MESSAGE_SIZE);
 
-                    client->send(sendSound);
-                    client->recieve(sendSound);
+                    client->send(sendingSound);
+                    client->recieve(sendingSound);
 
 
-                    audioOut->write(sendSound.audio_data, MESSAGE_SIZE);
+                    audioOut->write(sendingSound.audio_data, MESSAGE_SIZE);
                 }
             }
             else
             {
-                memset(this->recieveSound.audio_data, '\0', MESSAGE_SIZE);
-                client->send(this->recieveSound);
-                client->recieve(this->recieveSound);
+                memset(this->recievedSound.audio_data, '\0', MESSAGE_SIZE);
+                client->send(this->recievedSound);
+                client->recieve(this->recievedSound);
 
 
-                prepareToAudioOutput(recieveSound);
+                prepareToAudioOutput(recievedSound);
 
-                audioOut->write(recieveSound.audio_data, MESSAGE_SIZE);
+                audioOut->write(recievedSound.audio_data, MESSAGE_SIZE);
 
-                if (recieveSound.call)
+                if (recievedSound.call)
                 {
                     if (call == false)
                     {
                         switched = true;
                     }
                     call = true;
-                    recieveSound.call = false;
+                    recievedSound.call = false;
                 }
                 else
                 {
@@ -144,14 +144,14 @@ NetworkController::NetworkController(bool server, QString ip)
         this->server = nullptr;
 
 
-    nothing.call = false;
+    this->nothing.call = false;
     nothing.sending = false;
     nothing.disconect = false;
     nothing.frequency = -1;
 
-    sendSound.call = false;
-    sendSound.sending = true;
-    sendSound.disconect = false;
+    this->sendingSound.call = false;
+    sendingSound.sending = true;
+    sendingSound.disconect = false;
 
     callingSound.call = true;
     callingSound.sending = true;
@@ -159,9 +159,9 @@ NetworkController::NetworkController(bool server, QString ip)
     for (int i = 0; i < MESSAGE_SIZE; i++)
         callingSound.audio_data[i] = char(50 * sin(i * MESSAGE_SIZE));
 
-    recieveSound.call = false;
-    recieveSound.sending = false;
-    recieveSound.disconect = false;
+    recievedSound.call = false;
+    recievedSound.sending = false;
+    recievedSound.disconect = false;
 
 
     this->n_exit = true;
@@ -187,8 +187,8 @@ NetworkController::NetworkController(bool server, QString ip)
         this->client = new Client(ip);
 
     this->is_call = false;
-    this->is_send = false;
-    this->is_config = false;
+    this->is_transmitting = false;
+    this->is_configured = false;
 
     this->szum_level = 2;
 }
@@ -197,10 +197,10 @@ void NetworkController::config_send(int frequency)
 {
     this->change_state.lock();
 
-    this->is_config = true;
-    this->is_send = true;
+    this->is_configured = true;
+    this->is_transmitting = true;
 
-    sendSound.frequency = frequency;
+    sendingSound.frequency = frequency;
     callingSound.frequency = frequency;
 
     this->change_state.unlock();
@@ -210,10 +210,10 @@ void NetworkController::config_listen(int frequency)
 {
     this->change_state.lock();
 
-    this->is_config = true;
-    this->is_send = false;
+    this->is_configured = true;
+    this->is_transmitting = false;
 
-    recieveSound.frequency = frequency;
+    recievedSound.frequency = frequency;
 
     this->change_state.unlock();
 }
@@ -222,7 +222,7 @@ void NetworkController::config_kill()
 {
     this->change_state.lock();
 
-    this->is_config = false;
+    this->is_configured = false;
 
     this->change_state.unlock();
 }

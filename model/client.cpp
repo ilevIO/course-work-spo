@@ -14,10 +14,11 @@ void Client::send(Message &msg)
 {
     this->socket.send(reinterpret_cast<char*>(&msg), sizeof(msg));
 }
-
 void Client::recieve(Message &msg)
 {
-    this->socket.receive(reinterpret_cast<char*>(&msg), sizeof(msg));
+    if (this->socket.receive(reinterpret_cast<char*>(&msg), sizeof(msg)) == -1) {
+        //becomeServer();
+    }
 }
 
 Client::~Client()

@@ -7,7 +7,6 @@ class AbstractNetworkController : public QThread {
     Q_OBJECT
 
 public:
-
     virtual void config_send(int frequency) = 0;
     virtual void config_listen(int frequecy) = 0;
     virtual void config_kill() = 0;

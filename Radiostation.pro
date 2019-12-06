@@ -29,6 +29,7 @@ win32 {
 LIBS += -lws2_32
 }
 SOURCES += \
+    controller/multicastnetworkcontroller.cpp \
     controller/r123bpstatecontroller.cpp \
     controller/r123rststatecontroller.cpp \
     controller/r123statecontroller.cpp \
@@ -51,6 +52,8 @@ SOURCES += \
     controller/r123controller.cpp
 
 HEADERS += \
+    controller/broadcast_network_controller.h \
+    controller/multicastnetworkcontroller.h \
     controller/networkcontroller/abstractnetworkcontroller.h \
     controller/r123bpstatecontroller.h \
     controller/r123rststatecontroller.h \

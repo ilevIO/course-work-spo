@@ -19,7 +19,17 @@ MainMenu::~MainMenu()
 {
     delete ui;
 }
-
+/*
+class MainController {
+public:
+    NetworkController *networkController;
+    static MainController *shared;
+private:
+    MainController() {
+        shared = new MainController();
+    }
+};
+*/
 void MainMenu::on_launchServer_clicked()
 {
     regex regular("^[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}$");
@@ -29,6 +39,8 @@ void MainMenu::on_launchServer_clicked()
     }
     else
     {
+
+        //MainController mainController;
         NetworkController * networkController = new NetworkController(false, ui->ipEdit->text());
         networkController->start();
         if (this->ui->R173_select->isChecked())

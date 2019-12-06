@@ -58,11 +58,12 @@ int Socket::receive(char* buffer, int len)
 {
     int recv_size;
     recv_size = recv(this->sock, buffer, len, 0);
-    if (recv_size == SOCKET_ERROR)
+    return recv_size;
+    /*if (recv_size == SOCKET_ERROR)
         return -1;
     else {
         return recv_size;
-    }
+    }*/
 }
 
 int Socket::bind(int port)
@@ -98,6 +99,7 @@ Socket * Socket::accept()
 
 Socket::Socket(int)
 {
+    //???
 }
 
 void Socket::init() {

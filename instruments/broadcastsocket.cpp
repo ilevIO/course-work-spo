@@ -70,7 +70,7 @@ void BroadcastSocket::send(char *buffer, int len)
 {
     if (sendto(this->reciever, buffer, len, 0,
                (sockaddr*)&this->addr, sizeof(addr)) < 0)
-        qDebug() << "message isn't sent";
+        qDebug() << "message hasn't been sent";
 }
 
 void BroadcastSocket::recieve(char *buffer, int max_len)

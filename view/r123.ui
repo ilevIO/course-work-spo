@@ -58,8 +58,8 @@
         </property>
         <property name="geometry">
          <rect>
-          <x>11</x>
-          <y>1</y>
+          <x>20</x>
+          <y>10</y>
           <width>1011</width>
           <height>631</height>
          </rect>
@@ -531,6 +531,9 @@
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
         </property>
        </widget>
        <widget class="QLabel" name="r123_zpcz1_poddiap_sl">
@@ -1061,8 +1064,8 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="r173.qrc"/>
   <include location="r123.qrc"/>
+  <include location="r173.qrc"/>
  </resources>
  <connections/>
 </ui>
