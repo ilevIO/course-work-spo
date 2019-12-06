@@ -77,6 +77,7 @@ HEADERS += \
     controller/r123controller.h
 
 FORMS += \
+    view/initialmenu.ui \
     view/r173.ui \
     view/mainmenu.ui \
     view/r159.ui \

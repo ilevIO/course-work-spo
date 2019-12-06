@@ -13,7 +13,7 @@ MulticastNetworkController::MulticastNetworkController(bool server, QString ip, 
     s_addr.sin_port = htons(DEFAULT_PORT);
 
     this->group.sin_family = AF_INET;
-    this->group.sin_addr.s_addr = inet_addr("224.4.4.44");
+    this->group.sin_addr.s_addr = inet_addr(GROUP_IP);
     this->group.sin_port = htons(DEFAULT_PORT);
 
     int flag;
