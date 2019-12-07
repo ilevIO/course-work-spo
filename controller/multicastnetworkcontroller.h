@@ -97,31 +97,15 @@ private:
     void prepareForAudioOutput(Message &msg);
     void run() override;
 public:
-    void config_send(int frequency) override {
-        //
-    };
-    void config_listen(int frequecy) override{
-        //
-    };
-    void config_kill() override{
-        //
-    };
+    void config_send(int frequency) override;
+    void config_listen(int frequecy) override;
+    void config_kill() override;
 
-    void call_on() override{
-
-    };
-    void call_off() override{
-
-    };
-
-    void setVolume(char level) override{ };
-    void setSzumLevel(float level) override{
-
-    };
-    void setRecordVolume(char level) override{
-
-    };
-
+    void call_on() override;
+    void call_off() override;
+    void setVolume(char level) override;
+    void setSzumLevel(float level) override;
+    void setRecordVolume(char level) override;
     MulticastNetworkController();
     MulticastNetworkController(bool server, QString ip = "127.0.0.1", QString group_ip = GROUP_IP);
 };

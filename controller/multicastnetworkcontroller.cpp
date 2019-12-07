@@ -24,7 +24,7 @@ MulticastNetworkController::MulticastNetworkController(bool server, QString ip, 
     QByteArray ba = group_ip.toLocal8Bit();
     const char *c_group_ip = ba.data();
     inet_pton(AF_INET, c_group_ip, &(grpaddr));
-    char *srcaddr_str = "127.0.0.1";
+    const char *srcaddr_str = "127.0.0.1";
     u_int32 srcaddr;
     inet_pton(AF_INET, srcaddr_str, &srcaddr);
     u_int32  iaddr = srcaddr;
@@ -127,6 +127,7 @@ void MulticastNetworkController::run() {
         }
         else
         {
+            usleep(500);
             send(nothing);
             receive(nothing);
         }
@@ -147,3 +148,78 @@ void MulticastNetworkController::run() {
         }
     }
 }
+
+
+void MulticastNetworkController::config_send(int frequency)
+{
+    this->change_state.lock();
+
+    this->is_configured = true;
+    this->is_transmitting = true;
+
+    sendingSound.frequency = frequency;
+    callingSound.frequency = frequency;
+
+    this->change_state.unlock();
+}
+
+void MulticastNetworkController::config_listen(int frequency)
+{
+    this->change_state.lock();
+
+    this->is_configured = true;
+    this->is_transmitting = false;
+
+    receivedSound.frequency = frequency;
+
+    this->change_state.unlock();
+}
+
+void MulticastNetworkController::config_kill()
+{
+    this->change_state.lock();
+
+    this->is_configured = false;
+
+    this->change_state.unlock();
+}
+
+void MulticastNetworkController::call_on()
+{
+    this->change_state.lock();
+
+    this->is_call = true;
+
+    this->change_state.unlock();
+}
+
+void MulticastNetworkController::call_off()
+{
+    this->change_state.lock();
+
+    this->is_call = false;
+
+    this->change_state.unlock();
+}
+
+void MulticastNetworkController::setVolume(char level)
+{
+    change_state.lock();
+    this->audioOutput->setVolume(qreal(level) / 100);
+    change_state.unlock();
+}
+
+void MulticastNetworkController::setSzumLevel(float level)
+{
+    change_state.lock();
+    this->szum_level = level;
+    change_state.unlock();
+}
+
+void MulticastNetworkController::setRecordVolume(char level)
+{
+    change_state.lock();
+    this->audioInput->setVolume(qreal(level) / 100);
+    change_state.unlock();
+}
+

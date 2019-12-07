@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     Socket::init();
 
     QApplication a(argc, argv);
-
+    //InitialMenu w;
     MainMenu w;
     w.show();
 
