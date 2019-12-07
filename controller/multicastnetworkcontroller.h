@@ -96,6 +96,7 @@ private:
     }
     void prepareForAudioOutput(Message &msg);
     void run() override;
+    void commonInit();
 public:
     void config_send(int frequency) override;
     void config_listen(int frequecy) override;

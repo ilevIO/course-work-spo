@@ -7,6 +7,8 @@
 #include <QMessageBox>
 #include "controller/broadcastnetworkcontroller.h"
 #include "controller/multicastnetworkcontroller.h"
+#include <QDebug>
+#include <iostream>
 using namespace std;
 
 MainMenu::MainMenu(QWidget *parent) :
@@ -66,11 +68,16 @@ void MainMenu::on_pushButton_clicked()
 
 void MainMenu::on_createServer_clicked()
 {
-    MulticastNetworkController * networkController = new MulticastNetworkController(false);// NetworkController(true, "");
+    qDebug() << "0\n";
+    MulticastNetworkController * networkController = new MulticastNetworkController(false);//new NetworkController(true, "");
+    qDebug()  << "1\n";
     networkController->start();
+    qDebug()  << "2\n";
     if (this->ui->R173_select->isChecked())
     {
+        qDebug() << "3\n";
         R173 *w = new R173(this->ui->ipEdit->text(), false, networkController);
+        qDebug() << "4\n";
         w->show();
     }
     else

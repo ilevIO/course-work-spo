@@ -1,5 +1,6 @@
 #include "multicastnetworkcontroller.h"
-
+#include <QDebug>
+#include <math.h>
 MulticastNetworkController::MulticastNetworkController(): AbstractNetworkController()
 {
 
@@ -15,9 +16,10 @@ MulticastNetworkController::MulticastNetworkController(bool server, QString ip, 
     this->group.sin_family = AF_INET;
     this->group.sin_addr.s_addr = inet_addr(GROUP_IP);
     this->group.sin_port = htons(DEFAULT_PORT);
-
+    qDebug() << "MulticastNetworkController::0\n";
     int flag;
     flag = bind(sock_fd, (SOCKADDR*)&s_addr, sizeof(s_addr));
+    qDebug() << "MulticastNetworkController::1\n";
     //if (flag == -1) { }
 
     u_int32 grpaddr;
@@ -28,8 +30,12 @@ MulticastNetworkController::MulticastNetworkController(bool server, QString ip, 
     u_int32 srcaddr;
     inet_pton(AF_INET, srcaddr_str, &srcaddr);
     u_int32  iaddr = srcaddr;
+    qDebug() << "MulticastNetworkController::2\n";
     this->join_source_group(sock_fd, grpaddr, srcaddr, iaddr);
+    qDebug() << "MulticastNetworkController::3\n";
+    this->commonInit();
     this->run();
+    qDebug() << "MulticastNetworkController::4\n";
 }
 
 void MulticastNetworkController::prepareForAudioOutput(Message &msg)
@@ -43,10 +49,56 @@ void MulticastNetworkController::prepareForAudioOutput(Message &msg)
     }
 }
 
+void MulticastNetworkController::commonInit() {
 
+    this->nothing.call = false;
+    nothing.sending = false;
+    nothing.disconect = false;
+    nothing.frequency = -1;
+
+    this->sendingSound.call = false;
+    sendingSound.sending = true;
+    sendingSound.disconect = false;
+
+    callingSound.call = true;
+    callingSound.sending = true;
+    callingSound.disconect = false;
+    for (int i = 0; i < MESSAGE_SIZE; i++)
+        callingSound.audio_data[i] = char(50 * sin(i * MESSAGE_SIZE));
+
+    receivedSound.call = false;
+    receivedSound.sending = false;
+    receivedSound.disconect = false;
+
+
+    this->n_exit = true;
+
+    QAudioDeviceInfo infoInput = QAudioDeviceInfo::defaultInputDevice();
+    QAudioDeviceInfo infoOutput = QAudioDeviceInfo::defaultOutputDevice();
+
+    QAudioFormat format;
+    format.setSampleRate(8000);
+    format.setChannelCount(1);
+    format.setSampleSize(RATE_BYTES);
+    format.setSampleType(RATE_BYTES == 8 ? QAudioFormat::UnSignedInt : QAudioFormat::SignedInt);
+    format.setByteOrder(QAudioFormat::LittleEndian);
+    format.setCodec("audio/pcm");
+
+    this->audioInput = new QAudioInput(infoInput, format);
+    this->audioOutput = new QAudioOutput(infoOutput, format);
+
+    this->is_call = false;
+    this->is_transmitting = false;
+    this->is_configured = false;
+
+    this->szum_level = 2;
+}
 void MulticastNetworkController::run() {
+    qDebug() << "MulticastNetworkController::run::-1\n";
     auto audioOut = this->audioOutput->start();
+    qDebug() << "MulticastNetworkController::run::-0.5\n";
     auto audioIn = this->audioInput->start();
+    qDebug() << "MulticastNetworkController::run::0\n";
 
     bool switched = false;
     bool call = false;
@@ -127,9 +179,13 @@ void MulticastNetworkController::run() {
         }
         else
         {
+            qDebug() << "MulticastNetworkController::run::1\n";
             usleep(500);
+            qDebug() << "MulticastNetworkController::run::2\n";
             send(nothing);
+            qDebug() << "MulticastNetworkController::run::3\n";
             receive(nothing);
+            qDebug() << "MulticastNetworkController::run::4\n";
         }
 
         this->change_state.unlock();

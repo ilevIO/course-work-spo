@@ -85,6 +85,7 @@ void NetworkController::run()
         }
         else
         {
+            //usleep(500);
             client->send(nothing);
             client->recieve(nothing);
         }
